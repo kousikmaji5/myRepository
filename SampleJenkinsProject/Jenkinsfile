@@ -14,7 +14,7 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                withMaven {
+                withGradle {
                     bat 'gradle test'
                 }
             }
